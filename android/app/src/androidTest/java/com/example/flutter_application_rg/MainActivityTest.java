@@ -1,10 +1,10 @@
-package io.flutter.plugins;
+package com.example.flutter_application_rg;
 
 import androidx.test.rule.ActivityTestRule;
 import dev.flutter.plugins.integration_test.FlutterTestRunner;
 import org.junit.Rule;
 import org.junit.runner.RunWith;
-import io.flutter.plugins.MainActivity;
+import com.example.flutter_application_rg.MainActivity;
 
 @RunWith(FlutterTestRunner.class)
 public class MainActivityTest {
