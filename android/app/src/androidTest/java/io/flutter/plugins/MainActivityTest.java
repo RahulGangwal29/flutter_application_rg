@@ -1,9 +1,10 @@
-package com.example.myapp;
+package io.flutter.plugins;
 
 import androidx.test.rule.ActivityTestRule;
 import dev.flutter.plugins.integration_test.FlutterTestRunner;
 import org.junit.Rule;
 import org.junit.runner.RunWith;
+import io.flutter.plugins.MainActivityTest;
 
 @RunWith(FlutterTestRunner.class)
 public class MainActivityTest {
