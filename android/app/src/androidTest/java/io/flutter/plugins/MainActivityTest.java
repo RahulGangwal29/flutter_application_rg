@@ -4,7 +4,7 @@ import androidx.test.rule.ActivityTestRule;
 import dev.flutter.plugins.integration_test.FlutterTestRunner;
 import org.junit.Rule;
 import org.junit.runner.RunWith;
-import io.flutter.plugins.MainActivityTest;
+import io.flutter.plugins.MainActivity;
 
 @RunWith(FlutterTestRunner.class)
 public class MainActivityTest {
