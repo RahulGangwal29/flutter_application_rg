@@ -1,6 +1,6 @@
 gcloud:
-  app: build/host/outputs/apk/debug/app-debug.apk
-  test: build/host/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+  app: build/app/outputs/apk/debug/app-debug.apk
+  test: build/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk
   device:
     - model: Nexus6
       version: 21
