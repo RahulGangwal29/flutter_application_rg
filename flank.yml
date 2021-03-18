@@ -1,0 +1,19 @@
+gcloud:
+  app: build/host/outputs/apk/debug/app-debug.apk
+  test: build/host/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+  device:
+    - model: Nexus6
+      version: 21
+      locale: en
+      orientation: portrait
+    - model: Pixel2
+      version: 28
+      locale: en
+      orientation: portrait
+  use-orchestrator : true
+  results-dir: physical-devices
+  record-video: true
+
+flank:
+  project: easy app flutter automation
+  smart-flank-gcs-path: gs://tests/physical-devices/JUnitReport.xml

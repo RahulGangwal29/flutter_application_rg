@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_rg/data/password_parser.dart';
 
-void main() => runApp(MyApp());
+import 'data/password_parser.dart';
+
+void main() {
+  runApp(new MyApp());
+//  loadPassword();
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -67,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,6 +84,13 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
+            ),
+            TextField(
+              obscureText: false,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Password',
+              ),
             ),
             Text(
               '$_counter',
