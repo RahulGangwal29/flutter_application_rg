@@ -5,6 +5,5 @@ gcloud:
     - model: iphone8
       locale: en
       orientation: portrait
-  use-orchestrator : true
   results-dir: /Users/rahgangw/flutter_application_rg/results
   record-video: true
