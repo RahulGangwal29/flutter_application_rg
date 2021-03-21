@@ -1,9 +1,9 @@
 gcloud:
-  test: build/ios/iphoneos/Runner.app
-  xctestrun-file: build/ios/iphoneos/Runner.app.xctestrun
+  test: /Users/rahgangw/flutter_application_rg/build/ios/iphoneos/Runner.app/Runner
+  xctestrun-file: /Users/rahgangw/flutter_application_rg/build/ios/Debug-iphoneos/Runner.app/Runner.xctestrun
+  xcode-version: 12.4
   device:
     - model: iphone8
+      version: 12.0
       locale: en
       orientation: portrait
-  results-dir: /Users/rahgangw/flutter_application_rg/results
-  record-video: true
