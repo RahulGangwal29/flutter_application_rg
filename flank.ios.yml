@@ -3,6 +3,5 @@ gcloud:
   xctestrun-file: /Users/rahgangw/flutter_application_rg/build/ios/Debug-iphoneos/Runner.app/Runner.xctestrun
   device:
     - model: iphone8
-      version: 12.0
       locale: en
       orientation: portrait
