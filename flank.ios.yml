@@ -1,6 +1,6 @@
 gcloud:
-  test: ./Payload.zip
-  xctestrun-file: ./Payload.xctestrun
+  test: ./Runner.app.zip
+  xctestrun-file: ./Runner.app.xctestrun
   device:
     - model: iphone8
       locale: en
