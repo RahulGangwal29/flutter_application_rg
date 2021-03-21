@@ -1,5 +1,5 @@
 gcloud:
-  test: /Users/rahgangw/flutter_application_rg/build/ios/iphoneos/Runner.app.
+  test: /Users/rahgangw/flutter_application_rg/build/ios/iphoneos/Runner.app.zip
   xctestrun-file: /Users/rahgangw/flutter_application_rg/ios/flutter_application_rgUITests.xctestrun
   device:
     - model: iphone8
