@@ -1,5 +1,5 @@
 gcloud:
-  test: ./Runner.app.zip
+  test: ./Runner.app
   xctestrun-file: ./Runner.app.xctestrun
   device:
     - model: iphone8
