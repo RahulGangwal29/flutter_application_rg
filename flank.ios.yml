@@ -1,6 +1,6 @@
 gcloud:
-  test: /Users/rahgangw/flutter_application_rg/build/ios/iphoneos/Runner.app/Runner
-  xctestrun-file: /Users/rahgangw/flutter_application_rg/build/ios/Debug-iphoneos/Runner.app/Runner.xctestrun
+  test: /Users/rahgangw/flutter_application_rg/build/ios/iphoneos/Runner.app
+  xctestrun-file: /Users/rahgangw/flutter_application_rg/ios/flutter_application_rgUITests.xctestrun
   device:
     - model: iphone8
       locale: en
