@@ -1,6 +1,6 @@
 gcloud:
-  test: ./Runner.app
-  xctestrun-file: ./Runner.app.xctestrun
+  test: build/ios/iphoneos/Runner.app
+  xctestrun-file: build/ios/iphoneos/Runner.app.xctestrun
   device:
     - model: iphone8
       locale: en
