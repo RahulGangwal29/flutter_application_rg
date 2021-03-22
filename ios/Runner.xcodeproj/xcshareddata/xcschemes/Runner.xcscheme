@@ -41,9 +41,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25A5CC80260727B400229E8A"
-               BuildableName = "flutter_application_rgTests.xctest"
-               BlueprintName = "flutter_application_rgTests"
+               BlueprintIdentifier = "25CFA1022607795500CED686"
+               BuildableName = "flutter_application_rgUITests1.xctest"
+               BlueprintName = "flutter_application_rgUITests1"
                ReferencedContainer = "container:Runner.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -51,9 +51,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "25A5CC71260727AA00229E8A"
-               BuildableName = "flutter_application_rgUITests.xctest"
-               BlueprintName = "flutter_application_rgUITests"
+               BlueprintIdentifier = "25CFA1112607796500CED686"
+               BuildableName = "flutter_application_rgTests1.xctest"
+               BlueprintName = "flutter_application_rgTests1"
                ReferencedContainer = "container:Runner.xcodeproj">
             </BuildableReference>
          </TestableReference>

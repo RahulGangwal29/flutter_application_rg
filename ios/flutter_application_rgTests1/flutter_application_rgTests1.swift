@@ -1,13 +1,13 @@
 //
-//  flutter_application_rgTests.swift
-//  flutter_application_rgTests
+//  flutter_application_rgTests1.swift
+//  flutter_application_rgTests1
 //
 //  Created by Rahul Gangwal on 30/12/1942 Saka.
 //
 
 import XCTest
 
-class flutter_application_rgTests: XCTestCase {
+class flutter_application_rgTests1: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
