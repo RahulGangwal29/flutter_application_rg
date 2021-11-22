@@ -9,7 +9,7 @@ pipeline {
               sh  'cd $FCI_BUILD_DIR'
 
 
-sh 'pushd android'
+sh 'cd android'
 
 sh './gradlew app:assembleAndroidTest'
 
