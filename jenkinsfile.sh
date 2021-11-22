@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                cd $FCI_BUILD_DIR
+              sh  'cd $FCI_BUILD_DIR'
 
 
 sh 'pushd android'
