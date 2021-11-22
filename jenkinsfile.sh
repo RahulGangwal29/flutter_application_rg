@@ -11,9 +11,9 @@ pipeline {
 
 sh 'cd android'
 
-sh '/Users/rahgangw/flutter_application_rg/android/gradlew/gradlew app:assembleAndroidTest'
+sh '/Users/rahgangw/flutter_application_rg/android/gradlew app:assembleAndroidTest'
 
-sh '/Users/rahgangw/flutter_application_rg/android/gradlew/gradlew app:assembleDebug -Ptarget="$FCI_BUILD_DIR/integration_test/app_test.dart"'
+sh '/Users/rahgangw/flutter_application_rg/android/gradlew app:assembleDebug -Ptarget="$FCI_BUILD_DIR/integration_test/app_test.dart"'
 
 sh 'popd'
 
