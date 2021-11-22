@@ -6,6 +6,7 @@ import 'package:flutter_application_rg/testdatatypes/password_test.dart';
 
 Future<String> _loadPasswordAsset() async {
   return await rootBundle.loadString('assets/password.json');
+  
 }
 
 Password _parseJsonForPassword(String jsonString) {

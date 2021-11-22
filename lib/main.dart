@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.amber,
+        primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'ExecuteAutomation Home Page'),
-    );
+      home: MyHomePage(title: 'RG Automation Home Page'),
+    );r
   }
 }
 
@@ -72,7 +72,6 @@ class _MyHomePageState extends State<MyHomePage> {
       },
     );
   }
-
 
   @override
   Widget build(BuildContext context) {

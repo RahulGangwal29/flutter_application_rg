@@ -1,9 +1,10 @@
 // Imports the Flutter Driver API.
+import 'dart:io';
+
 import 'package:flutter_driver/flutter_driver.dart';
 import 'package:test/test.dart';
 
 void main() {
-
   group('Counter App', () {
     // First, define the Finders and use them to locate widgets from the
     // test suite. Note: the Strings provided to the `byValueKey` method must
@@ -14,7 +15,6 @@ void main() {
     final buttonSubtract = find.byValueKey('subtract');
     final alertText = find.byValueKey('alert_text');
     final btnClose = find.byValueKey('close_button');
-
 
     FlutterDriver driver;
 
@@ -55,7 +55,6 @@ void main() {
       await driver.tap(buttonSubtract);
 
       expect(await driver.getText(counterTextFinder), "0");
-
     });
   });
 }
