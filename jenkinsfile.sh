@@ -11,19 +11,21 @@ environment {
         stage('Hello') {
             steps {
 
-sh './gradlew :app:assembleDebug'
+pushd android                
 
-sh './gradlew :app:assembleDebugAndroidTest'
+ ./gradlew :app:assembleDebug
 
-sh 'popd'
+./gradlew :app:assembleDebugAndroidTest
 
-sh 'echo $GCLOUD_KEY_FILE | base64 --decode > ./rahulgangwal1992-7ed6a8713950.json'
+popd
 
-sh 'gcloud auth activate-service-account --key-file=/Users/rahgangw/Downloads/rahulgangwal1992-7ed6a8713950.json'
+echo $GCLOUD_KEY_FILE | base64 --decode > ./rahulgangwal1992-7ed6a8713950.json
 
-sh 'gcloud --quiet config set project rahulgangwal1992'
+gcloud auth activate-service-account --key-file=/Users/rahgangw/Downloads/rahulgangwal1992-7ed6a8713950.json
 
-sh 'gcloud firebase test android run --type instrumentation --app build/app/outputs/apk/debug/app-debug.apk --test build/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk'
+gcloud --quiet config set project rahulgangwal1992
+
+gcloud firebase test android run --type instrumentation --app build/app/outputs/apk/debug/app-debug.apk --test build/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk
 
             }
         }
