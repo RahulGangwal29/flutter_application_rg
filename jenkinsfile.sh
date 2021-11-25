@@ -12,10 +12,9 @@ environment {
         stage ('Assemble Android Test')
         {
             steps{
-                sh 'cd $BUZZ_PROJECT_ROOT'
-                sh 'pushd android/'
-        sh './gradlew assembleDebug'
-        sh './gradleT assembleDebugAndroidTest'
+               
+        sh '/Users/rahgangw/flutter_application_rg/android/./gradlew assembleDebug'
+        sh '/Users/rahgangw/flutter_application_rg/android/./gradleT assembleDebugAndroidTest'
             }
         }
 
