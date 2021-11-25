@@ -5,7 +5,7 @@ pipeline {
 
 environment {
             flutter = "/Users/rahgangw/flutter/flutter/bin/flutter"
-            gradleT = "$BUZZ_PROJECT_ROOT/android/gradlew"
+            gradleT = "$BUZZ_PROJECT_ROOT/android/gradlew.bat"
         }
 
     stages {
