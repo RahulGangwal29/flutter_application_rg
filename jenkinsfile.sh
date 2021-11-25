@@ -13,7 +13,7 @@ environment {
 
 sh './gradlew :app:assembleDebug'
 
-sh './gradlew :app:assembleDebugAndroidTest -Ptarget='integration_test/app_test.dart'
+sh './gradlew :app:assembleDebugAndroidTest'
 
 sh 'popd'
 
