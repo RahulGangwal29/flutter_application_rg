@@ -11,13 +11,13 @@ environment {
         stage('Hello') {
             steps {
 
-pushd android                
+sh 'pushd android'                
 
- ./gradlew :app:assembleDebug
+sh  './gradlew :app:assembleDebug'
 
-./gradlew :app:assembleDebugAndroidTest
+sh './gradlew :app:assembleDebugAndroidTest'
 
-popd
+sh 'popd'
 
 echo $GCLOUD_KEY_FILE | base64 --decode > ./rahulgangwal1992-7ed6a8713950.json
 
