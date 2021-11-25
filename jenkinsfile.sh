@@ -13,8 +13,8 @@ environment {
         {
             steps{
                
-        sh '/Users/rahgangw/flutter_application_rg/android/./gradlew assembleDebug'
-        sh '/Users/rahgangw/flutter_application_rg/android/./gradleT assembleDebugAndroidTest'
+        sh '/Users/rahgangw/flutter_application_rg/android./gradlew assembleDebug'
+        sh '/Users/rahgangw/flutter_application_rg/android./gradleT assembleDebugAndroidTest'
             }
         }
 
