@@ -1,22 +1,21 @@
+pushd android
 
+flutter build apk 
 
-pipeline {
-    agent any
+./gradlew app:assembleAndroidTest
 
-environment {
-            flutter = "/Users/rahgangw/flutter/flutter/bin/flutter"
-            buzz_test = "/Users/rahgangw/flutter_application_rg"
-        }
+./gradlew app:assembleDebug -Ptarget=integration_test/app_test.dart
 
-    stages {
-        stage('Hello') {
-            steps {             
+popd
 
-sh '$buzz_test/android/gradlew :app:assembleDebug'
+echo $GCLOUD_KEY_FILE | base64 --decode > ./gcloud_key_file.json
 
-sh '$buzz_test/android/gradlew :app:assembleDebugAndroidTest'
+gcloud auth activate-service-account --key-file=gcloud_key_file.json
 
-            }
-        }
-    }
-}
+gcloud --quiet config set project your-project-id
+
+# Run the Flutter integration tests as if they were regular Android instrumentation tests
+gcloud firebase test android run \
+  --type instrumentation \
+  --app build/app/outputs/apk/debug/app-debug.apk \
+  --test build/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk \
