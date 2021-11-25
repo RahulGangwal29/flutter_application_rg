@@ -10,17 +10,12 @@ environment {
 
     stages {
         stage('Hello') {
-            steps {
+            steps {             
 
-                sh 'cd $buzz_test'
+sh '$buzz_test/android/gradlew :app:assembleDebug'
 
-sh 'pushd android'              
+sh '$buzz_test/android/gradlew :app:assembleDebugAndroidTest'
 
-sh './gradlew :app:assembleDebug'
-
-sh './gradlew :app:assembleDebugAndroidTest'
-
-sh 'popd'
             }
         }
     }
