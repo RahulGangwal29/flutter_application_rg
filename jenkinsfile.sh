@@ -11,8 +11,8 @@ environment {
         stage ('Assemble Android Test')
         {
             steps{
-        sh './gradlew assembleDebug'
-        sh './gradlew assembleDebugAndroidTest'
+        sh '/Users/rahgangw/flutter_application_rg/android/gradlew assembleDebug'
+        sh '/Users/rahgangw/flutter_application_rg/android/gradlew assembleDebugAndroidTest'
             }
         }
 
