@@ -10,8 +10,10 @@ environment {
     stages {
         stage ('Assemble Android Test')
         {
-        sh "./gradlew assembleDebug"
-        sh "./gradlew assembleDebugAndroidTest"
+            steps{
+        sh './gradlew assembleDebug'
+        sh './gradlew assembleDebugAndroidTest'
+            }
         }
 
     }
