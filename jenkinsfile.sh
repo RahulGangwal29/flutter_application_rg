@@ -5,16 +5,16 @@ pipeline {
 
 environment {
             flutter = "/Users/rahgangw/flutter/flutter/bin/flutter"
-            buzz_test = "/Users/rahgangw/flutter_application_rg"
         }
 
     stages {
         stage ('Assemble Android Test')
         {
             steps{
-            
-        sh '/Users/rahgangw/flutter_application_rg/android/gradlew assembleDebug'
-        sh '/Users/rahgangw/flutter_application_rg/android/gradlew assembleDebugAndroidTest'
+                sh 'cd $BUZZ_PROJECT_ROOT'
+                sh 'pushd android'
+        sh './gradlew assembleDebug'
+        sh './gradlew assembleDebugAndroidTest'
             }
         }
 
