@@ -12,9 +12,9 @@ environment {
             steps {
               sh  'cd $FCI_BUILD_DIR'
 
-sh '/Users/rahgangw/flutter_application_rg/android/gradlew app:assembleAndroidTest'
+sh './gradlew :app:assembleDebug'
 
-sh '/Users/rahgangw/flutter_application_rg/android/gradlew app:assembleDebug -Ptarget="$FCI_BUILD_DIR/integration_test/app_test.dart"'
+sh './gradlew :app:assembleDebugAndroidTest -Ptarget='$FCI_BUILD_DIR/integration_test/app_test.dart'
 
 sh 'popd'
 
