@@ -5,7 +5,7 @@ pipeline {
 
 environment {
             flutter = "/Users/rahgangw/flutter/flutter/bin/flutter"
-            gradleT = "$BUZZ_PROJECT_ROOT/android/gradlew.bat"
+            gradleT = "$BUZZ_PROJECT_ROOT/android"
         }
 
     stages {
@@ -14,8 +14,8 @@ environment {
             steps{
                 sh 'cd $BUZZ_PROJECT_ROOT'
                 sh 'pushd android'
-        sh '$gradleT assembleDebug'
-        sh '$gradleT assembleDebugAndroidTest'
+        sh './gradlew assembleDebug'
+        sh './gradleT assembleDebugAndroidTest'
             }
         }
 
