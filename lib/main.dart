@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'RG Automation Home Page'),
-    );r
+    );
   }
 }
 
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.display4,
+           //   style: Theme.of(context).textTheme.display4,
               key: ValueKey("counterText"),
             ),
             new Row(
