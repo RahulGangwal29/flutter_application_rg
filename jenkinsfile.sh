@@ -10,11 +10,10 @@ environment {
     stages {
         stage('Hello') {
             steps {
-              sh  'cd $FCI_BUILD_DIR'
 
 sh './gradlew :app:assembleDebug'
 
-sh './gradlew :app:assembleDebugAndroidTest -Ptarget='$FCI_BUILD_DIR/integration_test/app_test.dart'
+sh './gradlew :app:assembleDebugAndroidTest -Ptarget='integration_test/app_test.dart'
 
 sh 'popd'
 
