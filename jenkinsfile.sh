@@ -11,14 +11,13 @@ environment {
         stage('Hello') {
             steps {
 
-pushd android              
+sh "pushd android"              
 
-./gradlew :app:assembleDebug
+sh "gradlew :app:assembleDebug"
 
-./gradlew :app:assembleDebugAndroidTest
+sh "gradlew :app:assembleDebugAndroidTest"
 
-popd
-
+sh "popd"
             }
         }
     }
