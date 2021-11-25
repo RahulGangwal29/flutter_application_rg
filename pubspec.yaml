@@ -29,7 +29,7 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dev_dependencies:
-  integration_test: ^1.0.1
+  integration_test:
   flutter_test:
     sdk: flutter
   flutter_driver:
